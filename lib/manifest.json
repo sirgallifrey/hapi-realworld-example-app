@@ -1,0 +1,13 @@
+{
+    "connections": {
+        "port": 80
+    },
+    "registrations": [
+        {
+            "plugin": "./repositories"
+        },
+        {
+            "plugin": "./api"
+        }
+    ]
+}

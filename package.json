@@ -1,0 +1,37 @@
+{
+  "name": "hapi-realworld-example-app",
+  "version": "0.0.1",
+  "description": "hapi.js realworld example app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirgallifrey/hapi-realworld-example-app.git"
+  },
+  "author": "Sirgallifrey <Adilson Schmitt Junior>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sirgallifrey/hapi-realworld-example-app/issues"
+  },
+  "homepage": "https://github.com/sirgallifrey/hapi-realworld-example-app#readme",
+  "dependencies": {
+    "boom": "^5.1.0",
+    "glue": "^4.1.0",
+    "hapi": "^16.4.0",
+    "hoek": "^4.1.1",
+    "joi": "^10.5.2",
+    "knex": "^0.13.0",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.mapkeys": "^4.6.0",
+    "lodash.snakecase": "^4.1.1",
+    "objection": "^0.8.1",
+    "pg": "^6.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-hapi": "^10.0.0",
+    "eslint-plugin-hapi": "^4.0.0"
+  }
+}
