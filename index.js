@@ -21,7 +21,8 @@ require('./lib/server').createServer((err, server) => {
             hashedPassword: 'myhashedpassword'
         }).then((user) => {
 
-            console.log('user inserted');
+            console.log('user found');
+          
             return server.repositories.Article.create(user, {
                 slug: Faker.lorem.slug(),
                 title: Faker.lorem.words(),

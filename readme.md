@@ -19,9 +19,19 @@ For more information on how to this works with other frontends/backends, head ov
 
 # Getting started
 
-Running migrations
 
+Install deps
 ```bash
-docker-compose run --rm api node node_modules/.bin/knex migrate:latest
+docker-compose run --rm --no-deps api npm i
+```
+
+Running migrations
+```bash
+docker-compose run --rm api npm run migrate:latest
+```
+
+Lift the containers
+```
+docker-compose up api
 ```
 
