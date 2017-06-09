@@ -18,15 +18,14 @@ require('./lib/server').createServer((err, server) => {
         server.repositories.User.create({
             email: Faker.internet.email(),
             username: Faker.internet.userName(),
-            hashedPassword: 'myhashedpassword'
+            password: 'mypassword'
         }).then((user) => {
-
-            console.log('user found');
           
-            return server.repositories.Article.create(user, {
+            return server.repositories.Article.create({
                 slug: Faker.lorem.slug(),
                 title: Faker.lorem.words(),
-                body: Faker.lorem.paragraphs()
+                body: Faker.lorem.paragraphs(),
+                author: user.id
             });
         }).catch((e) => {
 

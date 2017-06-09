@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "migrate:latest" : "knex migrate:latest"
+    "migrate:latest": "knex migrate:latest"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/sirgallifrey/hapi-realworld-example-app#readme",
   "dependencies": {
+    "bcrypt": "^1.0.2",
     "boom": "^5.1.0",
     "glue": "^4.1.0",
     "hapi": "^16.4.0",
